@@ -9,5 +9,7 @@ it('errors produced invalid URLs are instances of Error', async () => {
         error = e;
     }
 
-    expect(error).instanceOf(Error);
+    expect(error).toBeTruthy();
+    expect(error instanceof TypeError).toBe(true);
+    expect(error instanceof Error).toBe(true);
 });
