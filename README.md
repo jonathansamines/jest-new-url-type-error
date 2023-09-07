@@ -1,0 +1,1 @@
+# jest-new-url-type-error
